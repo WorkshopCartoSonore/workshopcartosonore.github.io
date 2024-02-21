@@ -31,7 +31,12 @@ footer {
     text-align: center;   
   }
 
-footer a{
+footer a:link{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:visited{
     text-decoration: none;
     color: black;
 }
