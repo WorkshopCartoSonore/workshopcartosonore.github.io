@@ -38,10 +38,10 @@
     </p>
     <h3>1. Soundcloud : uploader ses sons</h3>
     <br>
-    <img src="/images/1_soundcloud.JPG" alt="Soundcloud" class="center">
+    <img src="/images/1_soundcloud.JPG" alt="Soundcloud" class="center75">
     <br>
     <ul>
-      <li>Se créer un compte sur Soundcloud.</li>
+      <li>Se créer un compte sur <a href="https://soundcloud.com">Soundcloud</a>.</li>
       <li>Cliquer sur l'ongler "uploader" en haut à droite pour uploader ses sons.</li>
       <li>Une fois l'upload terminé, cliquer sur "partager" en dessous de la piste.</li>
     </ul>
@@ -49,7 +49,7 @@
     <br>
     <h3>2. Soundcloud : exporter ses sons</h3>
     <br>
-    <img src="/images/2_soundcloud_partage.JPG" alt="Soundcloud export" class="center">
+    <img src="/images/2_soundcloud_partage.JPG" alt="Soundcloud export" class="center75">
     <br>
     <ul>
       <li>Aller dans l'onglet "intégrer".</li>
@@ -60,22 +60,22 @@
     <br>
     <h3>3. Soundcloud : modifier le code d'intégration</h3>
     <br>
-    <img src="/images/2b_soundcloud_modifcode.JPG" alt="Soundcloud modification code" class="center">
+    <img src="/images/2b_soundcloud_modifcode.JPG" alt="Soundcloud modification code" class="center75">
     <br>
     <ul>
       <li>Dans le code fourni, on retiendra uniquement la partie en rouge sur la capture d'écran ci-dessus.</li>
-      <li>On va effectuer quelques modifications esthétiques, en remplaçant show_comments=true&show_user=true par how_comments=false&show_user=false (en bleu dans la capture d'écran ci-dessus)</li>
+      <li>On va effectuer quelques modifications esthétiques du player, en remplaçant <i>show_comments=true&show_user=true</i> par <i>how_comments=false&show_user=false</i> (en bleu ci-dessus).</li>
       <li>C'est ce code que l'on va intégrer dans notre tableau à l'étape suivante.</li>
     </ul>
     <br>
     <br>
     <h3>4. Google Sheet : créer le tableau </h3>
     <br>
-    <img src="/images/3_sheet_tableau.JPG" alt="Google Sheet tableau" class="center">
+    <img src="/images/3_sheet_tableau.JPG" alt="Google Sheet tableau" class="center75">
     <br>
     <ul>
-      <li>Dans Google Sheet, créer un tableau avec 5 colonnes : Embed, Title, Description, Latitude, Longitude.</li>
-      <li>Dans la colonne "Embed", on va copier notre code obtenu à l'étape précédente. </li>
+      <li>Dans Google Sheet, créer un tableau avec 5 colonnes : <i>Embed, Title, Description, Latitude, Longitude</i>.</li>
+      <li>Dans la colonne <i>Embed</i>, on va copier notre code obtenu à l'étape précédente. </li>
       <li>La latitude et la longitude du point d'écoute doivent être en décimale. </li>
       <li>Pour obtenir les coordonnées d'un lieu dans Google Maps, il suffit de faire clic-droit et de copier la première ligne. Dans OpenStreetMaps, clic-droit et "afficher l'adresse". </li>
     </ul>
@@ -83,32 +83,184 @@
     <br>
     <h3>5. Google Sheet : données en texte brut</h3>
     <br>
-    <img src="/images/4_sheet_plaintext.JPG" alt="Google Sheet plaintexte" class="center">
+    <img src="/images/4_sheet_plaintext.JPG" alt="Google Sheet plaintexte" class="center75">
     <br>
     <ul>
       <li>Les données du tableau doivent être en texte brut.</li>
-      <li>Pour cela, aller dans >Format >Number >Plain text </li>
+      <li>Pour cela, sélectionner les cellules puis aller dans <i>>Format >Number >Plain text</i> </li>
     </ul>
     <br>
     <br>
     <h3>6. Google Sheet : publier le tableau sur le web</h3>
     <br>
-    <img src="/images/5_sheet_publish.JPG" alt="Google Sheet publish" class="center">
+    <img src="/images/5_sheet_publish.JPG" alt="Google Sheet publish" class="center75">
     <br>
     <ul>
       <li>Il faut ensuite publier les données du tableau pour y accéder à distance sur Umaps.</li>
-      <li>Pour cela, aller dans >File >Share >Publish to web </li>
+      <li>Pour cela, aller dans <i>>File >Share >Publish to web</i> </li>
     </ul>
     <br>
     <br>
     <h3>7. Google Sheet : paramètres d'export</h3>
     <br>
-    <img src="/images/6_sheet_link.JPG" alt="Google Sheet link" class="center">
+    <img src="/images/6_sheet_link.JPG" alt="Google Sheet link" class="center75">
     <br>
     <ul>
       <li>Choisir l'onglet à exporter (dans l'exemple ci-dessus, "Sheet1").</li>
-      <li>Choisir .csv comme format d'export. </li>
-      <li>Copier le code ainsi généré </li>
+      <li>Choisir <i>.csv</i> comme format d'export. </li>
+      <li>Copier le code ainsi généré. </li>
+    </ul>
+    <br>
+    <br>
+    <h3>8. Umap : créer une carte</h3>
+    <br>
+    <img src="/images/7_umap.JPG" alt="Umap" class="center75">
+    <br>
+    <ul>
+      <li>Se rendre sur <a href="https://umap.openstreetmap.fr/">Umap</a>.</li>
+      <li>Cliquer sur "créer une carte". </li>
+      <li>Donner un nom à la carte, définir le "tilelayer" (fond de carte) ainsi que le centre et le zoom, puis enregistrer la carte.</li>   
+      <li>Noter précieusement le lien fourni à l'enregistrement, pour retrouver l'accès au mode édition de la carte. </li>
+    </ul>
+    <br>
+    <br>
+    <h3>9. Umap : nouveau calque</h3>
+    <br>
+    <img src="/images/8_umap_layers.JPG" alt="Umap layer" class="center75">
+    <br>
+    <ul>
+      <li>Cliquer sur l'îcone "gérer les calques" dans le menu de droite.</li>
+      <li>Créer un nouveau calque dans lequel nous allons importer les données de notre tableau. </li>
+    </ul>
+    <br>
+    <br>
+    <h3>10. Umap : associer les données</h3>
+    <br>
+    <img src="/images/10_umap_remotedata_setup.JPG" alt="Umap remote data" class="center75">
+    <br>
+    <ul>
+      <li>Dans les propriétés du calque (menu à droite), cliquer sur l'onglet "remote data".</li>
+      <li>Dans la case "url", coller le lien vers les données de notre tableau (lien généré à l'étape 7). </li>
+      <li>Préciser le format des données : <i>csv</i></li>   
+      <li>Définir "Dynamic" sur <i>ON</i> : ainsi, les données seront mises à jour automatiquement à chaque mise à jour de notre tableau sur Google Sheet. </li>
+    </ul>
+    <br>
+    <br>
+    <h3>11. Umap : modifier le style des marqueurs</h3>
+    <br>
+    <img src="/images/11_umap_markers.JPG" alt="Umap markers" class="center75">
+    <br>
+    <ul>
+      <li>Une fois sauvegardé, les marqueurs devraient apparaitre aux coordonnées renseignées dans le tableau.</li>
+      <li>Dans l'onglet "Shape properties" du calque, il est possible de personnaliser leur aspect. </li>
+      <li>On peut personnaliser leur couleur et leur opacité, leur forme, importer une icône personnalisée, etc.</li>   
+    </ul>
+    <br>
+    <br>
+    <h3>12. Umap : modifier les paramètres d'interaction des marqueurs</h3>
+    <br>
+    <img src="/images/12_umap_interaction.JPG" alt="Umap interaction options" class="center75">
+    <br>
+    <ul>
+      <li>Cliquer sur l'onglet "Interaction options" dans le menu du calque. </li>
+      <li>Par défaut, les informations du marqueur s'ouvrent dans un "popup" lorsque l'on clique dessus. Dans notre cas, on veut modifier cela pour qu'elles s'affichent dans le "Side panel".</li>
+      <li>On va également modifier le contenu des marqueurs dans la case "popup content template" (l'icône [?] nous renseigne sur le formatage).</li>
+      <li>Nous allons indiquer <i># {Title} / {Description} / {{{{Embed}|20}}} </i>.</li>
+      <li>Cela va afficher les données renseignées dans les colonnes "Title" et "Description" de notre tableau Google Sheet, et le lecteur soundcloud.</li>
+      <li>Il est possible de modifier la taille du lecteur soundcloud : <i>{{{{Embed}|20}}}</i> donne un lecteur sur une ligne, <i>{{{{Embed}|160}}}</i> un plus gros lecteur qui affiche la photo de couverture de soundcloud.</li>   
+    </ul>
+    <br>
+    <br>
+    <h3>13. Umap : résultat d'affichage des marqueurs</h3>
+    <br>
+    <img src="/images/13_umap_popup.JPG" alt="Umap side panel" class="center75">
+    <br>
+    <ul>
+      <li>Une fois sauvegardé, voilà ce qu'on devrait obtenir lorsque l'on clique sur un marqueur de la carte. </li>
+    </ul>
+    <br>
+    <br>
+    <h3>14. Umap : affichage de la description de la carte au chargement</h3>
+    <br>
+    <img src="/images/14_umap_properties.JPG" alt="Umap properties" class="center75">
+    <br>
+    <ul>
+      <li>Pour notre exercice, nous souhaitons que la carte s'ouvre avec un panneau latéral qui va nous permettre de renseigner des informations générales. </li>
+      <li>Notre texte de présentation de la carte doit être écrit dans la case "description" (l'icône [?] nous renseigne sur le formatage, il est possible d'intégrer des images, sons, vidéos...). </li>
+      <li>Dans l'onglet "User interface options", à "do you want to display a panel on load, sélectionner "caption".</li>
+    </ul>
+    <br>
+    <br>
+    <h3>15. geojson.io : dessiner des ronds ou des rectangles</h3>
+    <br>
+    <img src="/images/16_geojson.JPG" alt="geojson.io" class="center75">
+    <br>
+    <ul>
+      <li>Nous allons maintenant dessiner des géométries sur notre carte pour y ajouter toutes les informations souhaitées. </li>
+      <li>Dans un nouveau calque, nous pouvons dessiner des lignes ou des polygones directement dans Umap.</li>
+      <li>Néanmoins, pour dessiner facilement des ronds et rectangles, il faudra passer par <a href="https://geojson.io/">geojson.io</a>.</li>
+      <li>Une fois que l'on a dessiné sur la carte de <i>geojson.io</i> les formes souhaitées, sauvegarder l'url pour y revenir ultérieurement, et copier le code JSON dans l'onglet de droite.</li>
+    </ul>
+    <br>
+    <br>
+    <h3>16. Umap : importer les données geoJSON</h3>
+    <br>
+    <img src="/images/17_geojson_import.JPG" alt="Umap geojson import" class="center75">
+    <br>
+    <ul>
+      <li>Revenir sur notre carte Umap, et cliquer sur l'icône "import data" à droite.</li>
+      <li>Coller le code JSON de l'étape précédente dans la case "Paste your data here".</li>
+      <li>Définir le format des données : <i>geojson</i>.</li>
+      <li>choisir le calque dans lequel importer ces données. Il est aussi possible de créer un nouveau calque.</li>
+    </ul>
+    <br>
+    <br>
+    <h3>17. Umap : modifier le style des données importées</h3>
+    <br>
+    <img src="/images/18_geojson_resultat.JPG" alt="Umap shape properties" class="center75">
+    <br>
+    <ul>
+      <li>Dans le gestionnaire de calques, sélectionner le calque dans lequel nous venons d'importer les données.</li>
+      <li>Dans l'onglet "Shape properties", il est possible de modifier l'apparence des géométries : couleur, opacité, etc.</li>
+      <li>Définir le format des données : <i>geojson</i>.</li>
+      <li>choisir le calque dans lequel importer ces données. Il est aussi possible de créer un nouveau calque.</li>
+    </ul>
+    <br>
+    <br>
+    <h3>18. Umap : modifier les informations associées au calque</h3>
+    <br>
+    <img src="/images/19_umap_calque.JPG" alt="Umap layer properties" class="center75">
+    <br>
+    <ul>
+      <li>Par défaut les géométries dessinées sont cliquables par l'utilisateur. </li>
+      <li>Si celles-ci constituent un fond de carte avec lequel on ne doit pas interagir, aller dans les propriétés du calques et définir "show this layer in the caption" sur <i>OFF</i>.</li>
+      <li>Si cette option est sur <i>ON</i>, des informations vont s'afficher en cliquant sur les géométries. Nous pouvons les renseigner dans l'onglet "interactions options" du calque.</li>
+      <li>Définir "popup shape" sur "side panel" pour que les informations s'ouvrent dans le panneau latéral.</li>
+      <li>Renseigner toutes les informations voulues dans la case "popup content template" (l'icône [?] nous renseigne sur le formatage, il est possible d'intégrer des images, sons, vidéos...).</li>
+    </ul>
+    <br>
+    <br>
+    <h3>19. Umap : export pour intégration web</h3>
+    <br>
+    <img src="/images/20_umap_export.JPG" alt="Umap export" class="center75">
+    <br>
+    <ul>
+      <li>Nous allons intégrer nos cartes dans une page web. </li>
+      <li>Pour cela, cliquer sur l'icône "Share and download" à gauche de l'écran.</li>
+      <li>Ouvrir le menu déroulant "Embed and link options".</li>
+      <li>Dans notre cas, nous allons modifier les paramètres suivants :
+        <ul>
+          <li><i>height</i> : 500px</li>
+          <li><i>include full screen link ?</i> : OFF</li>
+          <li><i>Do you want to display a panel on load?</i> : Caption</li>
+          <li><i>Display the search control</i> : Never</li>
+          <li><i>Display the fullscreen control</i> : Always</li>
+          <li><i>Display the locate control</i> : Never</li>
+          <li><i>Display the control to open OpenStreetMap editor</i> : Never</li>
+          <li><i>Display the tile layers control</i> : Never</li>
+        </ul>
+      </li>
+      <li>Une fois les paramètres modifiés, nous pouvons copier le code de l'onglet "Embed the map". </li>
     </ul>
     <br>
     <br>
