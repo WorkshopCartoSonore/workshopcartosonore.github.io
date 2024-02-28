@@ -29,19 +29,87 @@
         </ul>
     </nav>
 
-    <h2>Etape 1</h2>
+    <h2>Construction d'une carte sonore interactive</h2>
+    <p>Ce cours s'appuie en grande partie sur le tutoriel <a href="https://saralana.xyz/sound-map">DIY Soundmap</a> de l'artiste sonore Sara Lana.<br>
+    Dans ce cours, nous allons utiliser les outils suivants : <a href="https://soundcloud.com">Soundcloud</a>, <a href="https://www.google.fr/intl/fr/sheets/about/">Google Sheet</a>, <a href="https://umap.openstreetmap.fr/">Umap / Openstreetmaps</a>, <a href="https://geojson.io/">geojson.io</a>.<br>
+    Soundcloud et Google sont des outils commerciaux qui nécessitent la création d'un compte. Openstreetmaps et geojson.io quant à eux ne nécessitent pas forcément la création d'un compte. <br>
+    Openstreetmaps est un projet open-source tandis que geojson.io est un projet commercial de Mapbox.<br>
     <br>
-    <img src="/images/carto-bruitparif.PNG" alt="Bruitparif" class="center">
+    </p>
+    <h3>1. Soundcloud : uploader ses sons</h3>
     <br>
-    <p>sjfg ksfh sdkfjd hf. </p>
+    <img src="/images/1_soundcloud.JPG" alt="Soundcloud" class="center">
+    <br>
+    <ul>
+      <li>Se créer un compte sur Soundcloud.</li>
+      <li>Cliquer sur l'ongler "uploader" en haut à droite pour uploader ses sons.</li>
+      <li>Une fois l'upload terminé, cliquer sur "partager" en dessous de la piste.</li>
+    </ul>
     <br>
     <br>
-    <h2>Etape 2</h2>
+    <h3>2. Soundcloud : exporter ses sons</h3>
     <br>
-    <img src="/images/carto-bruitparif.PNG" alt="Bruitparif" class="center">
+    <img src="/images/2_soundcloud_partage.JPG" alt="Soundcloud export" class="center">
     <br>
-    <p>sjfg ksfh sdkfjd hf kdski hksdjhf kslqikzujo iejdksjn ieuhao. </p>
+    <ul>
+      <li>Aller dans l'onglet "intégrer".</li>
+      <li>Il est possible de personnaliser la couleur de l'onglet de lecture.</li>
+      <li>Copier le code d'intégration ainsi créé.</li>
+    </ul>
     <br>
+    <br>
+    <h3>3. Soundcloud : modifier le code d'intégration</h3>
+    <br>
+    <img src="/images/2b_soundcloud_modifcode.JPG" alt="Soundcloud modification code" class="center">
+    <br>
+    <ul>
+      <li>Dans le code fourni, on retiendra uniquement la partie en rouge sur la capture d'écran ci-dessus.</li>
+      <li>On va effectuer quelques modifications esthétiques, en remplaçant show_comments=true&show_user=true par how_comments=false&show_user=false (en bleu dans la capture d'écran ci-dessus)</li>
+      <li>C'est ce code que l'on va intégrer dans notre tableau à l'étape suivante.</li>
+    </ul>
+    <br>
+    <br>
+    <h3>4. Google Sheet : créer le tableau </h3>
+    <br>
+    <img src="/images/3_sheet_tableau.JPG" alt="Google Sheet tableau" class="center">
+    <br>
+    <ul>
+      <li>Dans Google Sheet, créer un tableau avec 5 colonnes : Embed, Title, Description, Latitude, Longitude.</li>
+      <li>Dans la colonne "Embed", on va copier notre code obtenu à l'étape précédente. </li>
+      <li>La latitude et la longitude du point d'écoute doivent être en décimale. </li>
+      <li>Pour obtenir les coordonnées d'un lieu dans Google Maps, il suffit de faire clic-droit et de copier la première ligne. Dans OpenStreetMaps, clic-droit et "afficher l'adresse". </li>
+    </ul>
+    <br>
+    <br>
+    <h3>5. Google Sheet : données en texte brut</h3>
+    <br>
+    <img src="/images/4_sheet_plaintext.JPG" alt="Google Sheet plaintexte" class="center">
+    <br>
+    <ul>
+      <li>Les données du tableau doivent être en texte brut.</li>
+      <li>Pour cela, aller dans >Format >Number >Plain text </li>
+    </ul>
+    <br>
+    <br>
+    <h3>6. Google Sheet : publier le tableau sur le web</h3>
+    <br>
+    <img src="/images/5_sheet_publish.JPG" alt="Google Sheet publish" class="center">
+    <br>
+    <ul>
+      <li>Il faut ensuite publier les données du tableau pour y accéder à distance sur Umaps.</li>
+      <li>Pour cela, aller dans >File >Share >Publish to web </li>
+    </ul>
+    <br>
+    <br>
+    <h3>7. Google Sheet : paramètres d'export</h3>
+    <br>
+    <img src="/images/6_sheet_link.JPG" alt="Google Sheet link" class="center">
+    <br>
+    <ul>
+      <li>Choisir l'onglet à exporter (dans l'exemple ci-dessus, "Sheet1").</li>
+      <li>Choisir .csv comme format d'export. </li>
+      <li>Copier le code ainsi généré </li>
+    </ul>
     <br>
     <br>
 
