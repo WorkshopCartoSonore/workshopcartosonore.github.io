@@ -31,6 +31,8 @@ footer {
     text-align: center;   
   }
 
+/* style des liens hypertexte */
+
 footer a:link{
     text-decoration: none;
     color: black;
@@ -45,6 +47,34 @@ footer a:hover{
     color: rgb(89, 89, 238);
 }
 
+p a:link{
+  color: rgb(89, 89, 238);
+}
+
+p a:visited{
+  color: rgb(89, 89, 238);
+}
+
+p a:hover{
+  color: rgb(114, 114, 235);
+}
+
+ul:not(.ul_nav):not(.sous) a:link{
+  color: rgb(89, 89, 238);
+}
+
+ul:not(.ul_nav):not(.sous) a:visited{
+  color: rgb(89, 89, 238);
+}
+
+ul:not(.ul_nav):not(.sous) a:hover{
+  color: rgb(114, 114, 235);
+}
+
+/* classe pour exclure les liens du menu nav de la sélection*/
+.ul_nav{
+  list-style-type: none;
+}
 
 /* classse pour centrer contenu */
 .center {
