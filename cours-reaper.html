@@ -22,25 +22,91 @@
                 <ul class="sous">
                     <li><a href="/cours-carto.html">Cours carto</a></li>
                     <li><a href="/cours-reaper.html">Cours Reaper</a></li>
-                    <li><a href="/exemples.html">Exemples et biblio</a></li>
+                    <li><a href="/biblio.html">Bilbiographie et liens</a></li>
                   </ul>
             </li>
             <li><a href="/travaux-finaux.html">Travaux finaux</a></li>
         </ul>
     </nav>
-
-    <h2>Installer Reaper</h2>
+    
     <br>
-    <img src="/images/carto-bruitparif.PNG" alt="Bruitparif" class="center">
+    <h2>Cours d'initiation Reaper : pense-bête</h2>
     <br>
-    <p>sjfg ksfh sdkfjd hf. </p>
+    <h3>1. Installation</h3>
+    <ul>
+        <li>Reaper est un <i>DAW</i> (<i>Digital Audio Workstation</i> ou station audionumérique), qui permet d’enregistrer, éditer, manipuler, créer et lire des fichiers audio et MIDI. </li>
+        <li>C’est un logiciel <i>open-source</i>, gratuit les 60 premiers jours, puis payant (60$). Il est possible de continuer à utiliser le logiciel même après les 60 jours d’essais sans acheter de licence, le rendant virtuellement gratuit. Néanmoins, si le logiciel vous plaît l’achat d’une licence permet de soutenir son développement. </li>
+        <li>Reaper est compatible Windows, Mac et Linux.</li>
+        <li>Pour l’installer, télécharger la dernière version <a href="https://www.reaper.fm/download.php">sur le site de Reaper</a>.</li>
+      </ul>
+      <br>
+    <h3>2. Affichage</h3>
+    <ul>
+        <li>Reaper est un logiciel qui peut être personnalisé de multiples façons. Ainsi chaque utilisateur a souvent une interface légèrement différente de celle par défaut. Les raccourcis clavier peuvent aussi être personnalisés. Ceux indiqués ici sont les raccourcis par défaut.</li>
+        <li>Personnellement j’utilise peu le mixer, je l’ai donc fermé pour laisser plus de place à mes pistes sur mon écran. Pour le rouvrir : <i>>View >Mixer</i> (ou <i>Ctrl+M</i>)</li>
+        <li>J’aime afficher le sonogramme (ou spectrogramme) de mes pistes, cela facilite le derushage. Pour cela : <i>>View >Peak Display Settings > Spectrogram + Peaks</i></li>
+        <li>Par défaut, la <i>timeline</i> est divisée sur une grille en mesures. Pour le derushage, on désactivera l’accrochage à cette grille (<i>Alt+G</i> ou l’icône de la grille en haut à gauche), et on changera l’unité de la timeline : <i>>View >Time unit for ruler >Minutes:Seconds</i></li>
+      </ul>
+      <br>
+    <h3>3. Pistes et Items</h3>
+    <ul>
+        <li>On peut avoir plusieurs pistes, et sur chaque piste plusieurs « <i>item</i> » (fragment sonore). </li>
+        <li><i>Glisser-déposer</i> un ou plusieurs fichiers audios pour les ouvrir (sur une piste ou sur plusieurs).</li>
+        <li>Dans l’encart de gauche de chaque piste on peut assigner un nom, et la rendre silencieuse (<i>M</i> = mute) ou solo (<i>S</i> = solo). </li>
+        <li>On peut aussi ajouter des effets sur une piste en cliquant sur « <i>FX</i> ».</li>
+        <li><i>Double-clic</i> sur un item pour ouvrir son menu : ici on peut modifier son volume, normaliser (le logiciel met l’item le plus fort possible avant saturation), ajouter des fade-in / fade-out, ajouter des effets uniquement sur cet item (« <i>Take FX</i> »)…</li>
+        <li> Pour normaliser l’item sélectionné, on peut utiliser le raccourci : <i>Ctrl+Shift+N</i></li>
+    </ul>
     <br>
+    <h3>4. Navigation et zoom</h3> 
+    <ul>
+        <li><i>Molette</i> = zoom horizontal</li>
+        <li><i>Ctrl + molette</i> = zoom vertical</li>
+        <li><i>Alt + molette</i> = déplacement « horizontal » sur la timeline</li>
+    </ul>
     <br>
-    <h2>Charger des pistes</h2>
+    <h3>5. Derushage</h3>
+    <ul>
+        <li>Une fois les sons chargés, on peut les derusher, c’est à dire sélectionner les passages à retenir et supprimer ce qui ne nous intéresse pas.</li>
+        <li>On peut commencer par écouter nos sons, et placer des « <i>marqueurs</i> » avec le raccourci clavier « <i>M</i> ». Chaque marqueur peut avoir un nom et une couleur différente, ce qui nous permet d’annoter nos prises et de s’y retrouver dans la timeline. </li>
+        <li>Ensuite on va découper les passages qui nous intéressent. Placer le curseur à l’endroit de la timeline où on souhaite faire un point de coupe, et utiliser le raccourci clavier « <i>S</i> » (comme split). </li>
+        <li>Une fois les passages inintéressants supprimés, on peut déplacer les items en les <i>glissants</i> (on peut aussi les changer de piste de cette façon). </li>
+        <li>On peut grouper plusieurs items ensemble avec le raccourci « <i>G</i> ». </li>
+        <li>On peut fusionner plusieurs items en les sélectionnant, puis <i>clic-droit</i> puis « <i>Glue items</i> ». </li>
+    </ul>
     <br>
-    <img src="/images/carto-bruitparif.PNG" alt="Bruitparif" class="center">
+    <h3>6. Volumes</h3>
+    <ul>
+        <li>Ensuite, on va régler les volumes de nos sons. </li>
+        <li>On peut ajuster le gain d’un item en <i>double-cliquant</i> dessus pour ouvrir son menu. </li>
+        <li>On peut normaliser les items : <i>Ctrl+Shift+N</i>. Le résultat sera différent si plusieurs items sont sélectionnés (le gain sera réglé en fonction du point le plus fort de tous les items) ou un seul. </li>
+        <li>On peut régler le volume général de nos pistes dans le mixer en déplaçant les curseurs. </li>
+        <li>Enfin on peut dessiner une « <i>enveloppe</i> », c’est à dire une courbe le long de la timeline qui représente des variations de volume dans le temps. Pour ouvrir l’enveloppe de volume d’une piste, la sélectionner et utiliser le raccourci clavier « <i>V</i> ». </li>
+    </ul>
     <br>
-    <p>sjfg ksfh sdkfjd hf kdski hksdjhf kslqikzujo iejdksjn ieuhao. </p>
+    <h3>7. Effets</h3>
+    <ul>
+        <li>De nombreux effets audio sont intégrés à Reaper. Reaper peut aussi lire des plug-ins <i>VST</i> qui peuvent être installés par ailleurs. </li>
+        <li>Pour ajouter un effet à une piste, cliquer sur « <i>FX</i> » à côté du titre de la piste, puis sur « <i>Add</i> » en bas à gauche. </li>
+        <li>Pour ajouter un effet à un item, <i>double-clic</i> sur l’item puis clic sur « <i>Take FX...</i> » en bas à gauche. </li>
+        <li>On peut filtrer les effets visible dans le menu de sélection. Par exemple si je tape « <i>EQ</i> », seuls les égaliseurs s’affichent.  </li>
+        <li>L’égaliseur est sans doute l’effet le plus utile, puisqu’il va nous permettre de baisser ou d’augmenter le volume de certaines fréquences spécifiques. </li>
+        <li>On peut sélectionner l’égaliseur graphique « <i>ReaEQ</i> » pour démarrer. On peut modifier 5 « points » de notre courbe de fréquence, en changeant leur fréquence, leur gain et leur largeur de bande. </li>
+        <li>On peut aussi changer le type d’EQ pour chaque point : pour couper les basses de mon enregistrement (par exemple un son de vent trop présent), je sélectionne le point 1 et je change son type en « <i>high-pass</i> ». </li>
+    </ul>
+    <br>
+    <h3>8. Export</h3>
+    <ul>
+      <li>Une fois terminé, il faut exporter les fichiers : <i>>File >Render…</i> ou <i>Ctrl+Alt+R</i></li>
+      <li>Il y a de nombreuses options différentes pour le choix des éléments à exporter. Voici deux options simples : 
+        <ul>
+          <li><i>Source : Master Mix + Bounds : Time Selection</i> exportera la zone de la timeline sélectionnée (toutes les pistes allumés et items qui s’y trouvent).</li> 
+           <li><i>Source : Selected Media Items</i> exportera plusieurs fichiers, un par item sélectionné.</li> 
+        </ul>
+      </li>
+      <li>Choisir l’emplacement de l’export dans <i>Directory</i> et le nom du ou des fichiers dans <i>File Name</i>. </li>
+      <li>Pour le format du fichier, on choisira un sample rate de <i>48000 Hz</i>, et un format <i>WAV 24 bit PCM</i>. </li>
+    </ul>
     <br>
     <br>
     <br>
